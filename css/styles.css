@@ -36,6 +36,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--RojoApagado);
   color: white;
 }
@@ -49,9 +50,31 @@ header {
   background-image: url(../media/img/banner-bg.jpg);
 }
 
+#Logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+  padding: 1.6rem;
+  font-weight: 700;
+  gap: 0.3rem;
+}
+
+#IconoPelicula {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 /* Classes */
 .redBTN {
-  padding: 1rem;
+  padding: 0.5rem;
   color: white;
   text-decoration: none;
+}
+
+.redBTN:hover {
+  border: 1px solid black;
+  border-radius: 10%;
 }
