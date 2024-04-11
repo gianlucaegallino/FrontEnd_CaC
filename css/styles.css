@@ -1,31 +1,57 @@
+/* Fonts */
 
+@font-face {
+    font-family: Nunito;
+    src: url(../media/fonts/NunitoLightRegular.woff2);
+}
+
+@font-face {
+    font-family: NunitoItalic;
+    src: url(../media/fonts/NunitoLightItalic.woff2);
+}
+
+/* Makes CSS variables for commonly used colors */
 :root {
-    --RojoApagado: #9f3647;
-    --CasiNegro: #181419;
-    --NegroGrisaceo: #2a2a2a;
-    --Gris: #333333;
-    --GrisClaro: #787878;
+  --RojoApagado: #9f3647;
+  --CasiNegro: #181419;
+  --NegroGrisaceo: #2a2a2a;
+  --Gris: #333333;
+  --GrisClaro: #787878;
 }
 
 
+/* Removes link decorations */
+a:link, a:visited {
+  text-decoration: none;
+}
 
-body{
-    display: flex;
-    flex-direction: column;
-    font-family: coolvetica, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Nunito, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--RojoApagado);
-    color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--RojoApagado);
+  color: white;
 }
 
+/* Tags */
 #hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-image: url(../media/img/banner-bg.jpg);
+}
+
+/* Classes */
+.redBTN {
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
 }
