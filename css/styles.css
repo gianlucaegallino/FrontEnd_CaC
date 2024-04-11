@@ -1,7 +1,14 @@
-@font-face {
-    font-family: coolvetica;
-    src: url(../media/fonts/coolvetica\ rg.otf);
-  }
+
+:root {
+    --RojoApagado: #9f3647;
+    --CasiNegro: #181419;
+    --NegroGrisaceo: #2a2a2a;
+    --Gris: #333333;
+    --GrisClaro: #787878;
+}
+
+
+
 body{
     display: flex;
     flex-direction: column;
@@ -13,8 +20,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: brown;
-    color: aliceblue;
+    background-color: var(--RojoApagado);
+    color: white;
 }
 
 #hero {
