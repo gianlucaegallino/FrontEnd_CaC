@@ -19,6 +19,19 @@
   --GrisClaro: #787878;
 }
 
+/*scrollbar*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--CasiNegro);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--RojoApagado);
+}
 
 /* Removes link decorations */
 a:link, a:visited {
@@ -46,8 +59,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: white;
   background-image: url(../media/img/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  width: 100vw;
+  height: 100vh;
 }
 
 #Logo{
@@ -92,4 +110,12 @@ header {
   box-shadow: 0rem 0rem 0.5rem #852d3b;
   border-radius: 10%;
   background-color: var(--RojoApagado);
+}
+ 
+.tituloXL {
+  font-size: 4rem;
+}
+
+.titulo{
+  font-size: 2.3rem;
 }
