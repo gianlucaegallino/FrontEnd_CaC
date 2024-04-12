@@ -67,14 +67,29 @@ header {
   height: 1.2rem;
 }
 
+#headerButtonContainer {
+  padding: 1.6rem;
+}
+
 /* Classes */
 .redBTN {
   padding: 0.5rem;
   color: white;
   text-decoration: none;
+  font-weight: 700;
 }
 
-.redBTN:hover {
-  border: 1px solid black;
+.blackBTN {
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
   border-radius: 10%;
+  background-color: var(--CasiNegro);
+  font-weight: 700;
+}
+
+.redBTN:hover, .blackBTN:hover { 
+  box-shadow: 0rem 0rem 0.5rem #852d3b;
+  border-radius: 10%;
+  background-color: var(--RojoApagado);
 }
