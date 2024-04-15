@@ -1,13 +1,13 @@
 /* Fonts */
 
 @font-face {
-    font-family: Nunito;
-    src: url(../media/fonts/NunitoLightRegular.woff2);
+  font-family: Nunito;
+  src: url(../media/fonts/NunitoLightRegular.woff2);
 }
 
 @font-face {
-    font-family: NunitoItalic;
-    src: url(../media/fonts/NunitoLightItalic.woff2);
+  font-family: NunitoItalic;
+  src: url(../media/fonts/NunitoLightItalic.woff2);
 }
 
 /* Makes CSS variables for commonly used colors */
@@ -34,7 +34,8 @@
 }
 
 /* Removes link decorations */
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
 }
 
@@ -53,12 +54,18 @@ header {
   align-items: center;
   background-color: var(--RojoApagado);
   color: white;
-  height:10vh;
+  height: 10vh;
 }
 
+hr {
+  width: 80%;
+  border-style: none;
+  border-bottom: 2px solid var(--RojoApagado);
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
 /* Tags */
 #hero {
-  
   display: flex;
   justify-content: center;
   color: white;
@@ -84,10 +91,9 @@ header {
   justify-content: center;
   align-items: center;
   align-content: center;
-  
 }
 
-#Logo{
+#Logo {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -110,19 +116,19 @@ header {
 
 /* Classes */
 
-.redBTN, .redBTN2 {
+.redBTN,
+.redBTN2 {
   background-color: var(--RojoApagado);
   text-decoration: none;
   font-weight: 700;
   color: white;
   border-radius: 5px;
-  
 }
 .redBTN {
   padding: 0.5rem;
 }
 
-.redBTN2{
+.redBTN2 {
   padding: 0.8rem;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
@@ -137,12 +143,14 @@ header {
   font-weight: 700;
 }
 
-.redBTN:hover, .blackBTN:hover { 
+.redBTN:hover,
+.blackBTN:hover {
   box-shadow: 0rem 0rem 0.5rem #852d3b;
   background-color: var(--RojoApagado);
 }
- 
-.tituloXL, .tituloprinc {
+
+.tituloXL,
+.tituloprinc {
   text-align: center;
   margin-top: 0%;
   margin-bottom: 1rem;
@@ -157,7 +165,7 @@ header {
   font-weight: 400;
   width: 31rem;
 }
-.titulo{
+.titulo {
   font-size: 2.3rem;
   text-align: center;
 }
