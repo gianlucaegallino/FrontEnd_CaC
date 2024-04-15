@@ -46,7 +46,7 @@ body {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: var(--CasiNegro);
 }
-
+/* TODO: ARREGLAR HEADER SPACING */
 header {
   display: flex;
   flex-direction: row;
@@ -56,7 +56,16 @@ header {
   color: white;
   height: 10vh;
 }
-
+/* TODO: ARREGLAR FOOTER BTNS QUE NO SON IGUALES*/
+footer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: var(--RojoApagado);
+  height: 15vh;
+  gap: 0.5rem;
+}
 hr {
   width: 80%;
   border-style: none;
@@ -168,6 +177,7 @@ hr {
 .titulo {
   font-size: 2.3rem;
   text-align: center;
+  color: white;
 }
 .peliculasGrid {
   display: grid;
