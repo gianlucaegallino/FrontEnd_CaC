@@ -40,8 +40,6 @@ a:visited {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   font-family: Nunito, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: var(--CasiNegro);
@@ -55,6 +53,13 @@ header {
   background-color: var(--RojoApagado);
   color: white;
   height: 10vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 /* TODO: ARREGLAR FOOTER BTNS QUE NO SON IGUALES*/
 footer{
@@ -74,6 +79,7 @@ hr {
   margin-top: 40px;
 }
 /* Tags */
+/* TODO: fix title spacing */
 #hero {
   display: flex;
   justify-content: center;
@@ -179,10 +185,13 @@ hr {
   text-align: center;
   color: white;
 }
+
+/* TODO: Fix track autogeneration */
 .peliculasGrid {
   display: grid;
   grid-template: repeat(3, auto) / repeat(6, auto);
-  gap: 1.5rem;
+  gap: 60px;
+  width: 80vw;
 }
 
 .peliculasSlider{
@@ -191,8 +200,23 @@ hr {
   grid-auto-flow: column;
   gap: 1.5rem;
   overflow: auto;
+  width: 80vw;
 }
 .pIMG {
-  height: 20rem;
-  width: auto;
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
 }
+
+.pIMGsmall {
+  border-radius: 10px;
+  height: 242.25px;
+  width: 161.5px;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+
+/* TODO: Responsive support */
