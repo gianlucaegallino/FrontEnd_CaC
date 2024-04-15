@@ -169,13 +169,20 @@ hr {
   font-size: 2.3rem;
   text-align: center;
 }
-.peliculas {
+.peliculasGrid {
   display: grid;
   grid-template: repeat(3, auto) / repeat(6, auto);
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-.peliculaIMG {
+.peliculasSlider{
+  display: grid;
+  grid-template: repeat(1, auto) / repeat(1, auto);
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  overflow: auto;
+}
+.pIMG {
   height: 20rem;
   width: auto;
 }
