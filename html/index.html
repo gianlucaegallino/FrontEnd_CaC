@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CAC-MOVIES</title>
@@ -11,134 +10,346 @@
     <link rel="stylesheet" href="../css/styles.css" />
 
     <!-- todo: include animation library, include favicon, mirror changes in all html-->
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="../html/index.html" id="Logo"><img id="IconoPelicula" src="../media/img/film-solid.svg"
-                alt="Icono Pelicula"><span>CAC-Movies</span></a>
-        <div id="headerButtonContainer">
-            <a href="../html/index.html" class="redBTN">Tendencias</a><a href="../html/register.html" class="redBTN">Registrarse</a><a href="../html/login.html" class="blackBTN">Iniciar Sesión</a>
-        </div>
+      <a href="../html/index.html" class="Logo"
+        ><img
+          class="IconoPelicula"
+          src="../media/img/film-solid.svg"
+          alt="Icono Pelicula"
+        /><span>CAC-Movies</span></a
+      >
+      <div class="headerButtonContainer">
+        <a href="../html/index.html" class="redBTN">Tendencias</a
+        ><a href="../html/register.html" class="redBTN">Registrarse</a
+        ><a href="../html/login.html" class="blackBTN">Iniciar Sesión</a>
+      </div>
     </header>
 
     <main>
-        <div id="hero">
-            <div id="fondoTransparente">
-                <div id="herocontent">
-                    <h1 class="tituloXL">Películas y series ilimitadas en un solo lugar</h1>
-                    <h2 class="tituloprinc">Disfruta donde quieras. Cancela en cualquier momento.</h2>
-                    <a class="redBTN2">Registrate</a>
-                </div>
-            </div>
+      <div class="hero">
+        <div class="fondoTransparente">
+          <div class="herocontent">
+            <h1 class="tituloXL">
+              Películas y series ilimitadas en un solo lugar
+            </h1>
+            <h2 class="tituloprinc">
+              Disfruta donde quieras. Cancela en cualquier momento.
+            </h2>
+            <a class="redBTN2">Registrate</a>
+          </div>
         </div>
-        <div id="busqueda">
-            <h2 class="titulo">¿Qué estas buscando para ver?</h2>
-            <div id="searchContainer">
-                <input placeholder="Buscar..." type="text">
-                <button>Buscar</button>
-            </div>
+      </div>
+      <div class="busqueda">
+        <h2 class="titulo">¿Qué estas buscando para ver?</h2>
+        <div class="searchContainer">
+          <input placeholder="Buscar..." type="text" />
+          <button>Buscar</button>
         </div>
-        <hr />
-        <div id="movieTrending">
-            <h2 class="titulo">Las Tendencias de hoy</h2>
-            <div class="peliculasGrid">
-                <div class="pelicula"><img src="../media/img/movieCovers/DunePart2.jpg" alt="Dune2" class="pIMG">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/KungFuPanda4.jpg" alt="KungFuPanda4"
-                        class="pIMG"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/GK.jpg" alt="GK" class="pIMG"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/Alienoid.jpg" alt="Alienoid" class="pIMG">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/RoadHouse.jpg" alt="RoadHouse" class="pIMG">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/WagesOfFear.jpg" alt="WagesOfFear"
-                        class="pIMG"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/MadameWeb.jpg" alt="MadameWeb" class="pIMG">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/Migration.jpg" alt="Migration" class="pIMG">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/AfterThePandemic.jpg" alt="Pandemic"
-                        class="pIMG"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/HeartOfTheHunter.jpg" alt="HeartOfTheHunter"
-                        class="pIMG"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/BagHead.jpg" alt="BagHead" class="pIMG">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/CreationOfTheGods.jpg" alt="CreationOfTheGods"
-                        class="pIMG"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/TheTearSmith.jpg" alt="TheTearSmith"
-                        class="pIMG"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/MaidMarian.jpg" alt="MaidMarian" class="pIMG">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/Imaginary.jpg" alt="Imaginary" class="pIMG">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/HardHit.jpg" alt="HardHit" class="pIMG">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/Penoza.jpg" alt="Penoza" class="pIMG">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/NoWayUp.jpg" alt="NoWayUp" class="pIMG">
-                </div>
-                <div class="pelicula"  id="extra1"><img src="../media/img/movieCovers/Hunters.jpg" alt="Hunters" class="pIMG">
-                </div>
-                <div class="pelicula" id="extra2"><img src="../media/img/movieCovers/Dune.jpg" alt="Dune" class="pIMG"></div>
-            </div>
+      </div>
+      <hr />
+      <div class="movieTrending">
+        <h2 class="titulo">Las Tendencias de hoy</h2>
+        <div class="peliculasGrclass">
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/DunePart2.jpg"
+              alt="Dune2"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/KungFuPanda4.jpg"
+              alt="KungFuPanda4"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img src="../media/img/movieCovers/GK.jpg" alt="GK" class="pIMG" />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/Alienoclass.jpg"
+              alt="Alienoclass"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/RoadHouse.jpg"
+              alt="RoadHouse"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/WagesOfFear.jpg"
+              alt="WagesOfFear"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/MadameWeb.jpg"
+              alt="MadameWeb"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/Migration.jpg"
+              alt="Migration"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/AfterThePandemic.jpg"
+              alt="Pandemic"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/HeartOfTheHunter.jpg"
+              alt="HeartOfTheHunter"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/BagHead.jpg"
+              alt="BagHead"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/CreationOfTheGods.jpg"
+              alt="CreationOfTheGods"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/TheTearSmith.jpg"
+              alt="TheTearSmith"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/MaclassMarian.jpg"
+              alt="MaclassMarian"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/Imaginary.jpg"
+              alt="Imaginary"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/HardHit.jpg"
+              alt="HardHit"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/Penoza.jpg"
+              alt="Penoza"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/NoWayUp.jpg"
+              alt="NoWayUp"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula" class="extra1">
+            <img
+              src="../media/img/movieCovers/Hunters.jpg"
+              alt="Hunters"
+              class="pIMG"
+            />
+          </div>
+          <div class="pelicula" class="extra2">
+            <img
+              src="../media/img/movieCovers/Dune.jpg"
+              alt="Dune"
+              class="pIMG"
+            />
+          </div>
         </div>
-        <hr />
-        <div id="movieAclamadas">
-            <h2 class="titulo">Las más aclamadas</h2>
-            <div class="peliculasSlider">
-                <div class="pelicula"><img src="../media/img/movieCovers/Shawshank.jpg" alt="ShawShank" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/TheGodfather.jpg" alt="TheGodfather"
-                        class="pIMGsmall"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/TheGodfatherPart2.jpg" alt="TheGodfather2"
-                        class="pIMGsmall"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/Schindler.jpg" alt="Schindler" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/12AngryMen.jpg" alt="12AngryMen" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/SpiritedAway.jpg" alt="SpiritedAway"
-                        class="pIMGsmall"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/Dilwale.jpg" alt="Dilwale" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/TheDarkKnight.jpg" alt="TheDarkKnight" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/Parasite.jpg" alt="Parasite"
-                        class="pIMGsmall"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/TheGreenMile.jpg" alt="TheGreenMile"
-                        class="pIMGsmall"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/YourName.jpg" alt="YourName" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/PulpFiction.jpg" alt="PulpFiction"
-                        class="pIMGsmall"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/LOTR.jpg" alt="LOTR"
-                        class="pIMGsmall"></div>
-                <div class="pelicula"><img src="../media/img/movieCovers/ForrestGump.jpg" alt="ForrestGump" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/TheGoodTheBadAndTheUgly.jpg" alt="TheGoodTheBadAndTheUgly" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/GoodFellas.jpg" alt="GoodFellas" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/GraveOfTheFireflies.jpg" alt="GraveOfTheFireflies" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/CinemaParadiso.jpg" alt="CinemaParadiso" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/SevenSamurai.jpg" alt="SevenSamurai" class="pIMGsmall">
-                </div>
-                <div class="pelicula"><img src="../media/img/movieCovers/LIfeIsBeautiful.jpg" alt="LIfeIsBeautiful" class="pIMGsmall">
-                </div>
-            </div>
+      </div>
+      <hr />
+      <div class="movieAclamadas">
+        <h2 class="titulo">Las más aclamadas</h2>
+        <div class="peliculasSlclasser">
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/Shawshank.jpg"
+              alt="ShawShank"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/TheGodfather.jpg"
+              alt="TheGodfather"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/TheGodfatherPart2.jpg"
+              alt="TheGodfather2"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/Schindler.jpg"
+              alt="Schindler"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/12AngryMen.jpg"
+              alt="12AngryMen"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/SpiritedAway.jpg"
+              alt="SpiritedAway"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/Dilwale.jpg"
+              alt="Dilwale"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/TheDarkKnight.jpg"
+              alt="TheDarkKnight"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/Parasite.jpg"
+              alt="Parasite"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/TheGreenMile.jpg"
+              alt="TheGreenMile"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/YourName.jpg"
+              alt="YourName"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/PulpFiction.jpg"
+              alt="PulpFiction"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/LOTR.jpg"
+              alt="LOTR"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/ForrestGump.jpg"
+              alt="ForrestGump"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/TheGoodTheBadAndTheUgly.jpg"
+              alt="TheGoodTheBadAndTheUgly"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/GoodFellas.jpg"
+              alt="GoodFellas"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/GraveOfTheFireflies.jpg"
+              alt="GraveOfTheFireflies"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/CinemaParadiso.jpg"
+              alt="CinemaParadiso"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/SevenSamurai.jpg"
+              alt="SevenSamurai"
+              class="pIMGsmall"
+            />
+          </div>
+          <div class="pelicula">
+            <img
+              src="../media/img/movieCovers/LIfeIsBeautiful.jpg"
+              alt="LIfeIsBeautiful"
+              class="pIMGsmall"
+            />
+          </div>
         </div>
+      </div>
     </main>
     <footer>
-        <a href="../html/index.html" class="redBTN">Términos y condiciones</a>
-        <a href="../html/index.html" class="redBTN">Preguntas frecuentes</a>
-        <a href="../html/index.html" class="redBTN">Ayuda</a>
-        <a href="../html/index.html" class="blackBTN">Administrador Peliculas</a>
+      <a href="../html/index.html" class="redBTN">Términos y condiciones</a>
+      <a href="../html/index.html" class="redBTN">Preguntas frecuentes</a>
+      <a href="../html/index.html" class="redBTN">Ayuda</a>
+      <a href="../html/index.html" class="blackBTN">Administrador Peliculas</a>
     </footer>
-    <a href="../html/index.html#IconoPelicula"  id="GoToTop">
-        <img src="../media/img/flecha-hacia-arriba.png" alt="Volver al principio" id="test">
+    <a href="../html/index.html#IconoPelicula" class="GoToTop">
+      <img
+        src="../media/img/flecha-hacia-arriba.png"
+        alt="Volver al principio"
+        class="test"
+      />
     </a>
-</body>
-
+  </body>
 </html>

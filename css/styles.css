@@ -80,7 +80,7 @@ hr {
 }
 /* Tags */
 /* TODO: fix title spacing */
-#hero {
+.hero {
   display: flex;
   justify-content: center;
   color: white;
@@ -90,7 +90,7 @@ hr {
   height: 90vh;
   width: calc(100vw - 10px);
 }
-#fondoTransparente {
+.fondoTransparente {
   background-color: #0000008f;
   display: flex;
   flex-direction: column;
@@ -101,7 +101,7 @@ hr {
   height: 90vh;
 }
 
-#herocontent {
+.herocontent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,7 +109,7 @@ hr {
   align-content: center;
 }
 
-#Logo {
+.Logo {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -121,22 +121,22 @@ hr {
   gap: 0.3rem;
 }
 
-#IconoPelicula {
+.IconoPelicula {
   width: 1.2rem;
   height: 1.2rem;
 }
 
-#headerButtonContainer {
+.headerButtonContainer {
   padding: 1.6rem;
 }
 
-#GoToTop {
+.GoToTop {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
 }
 
-#extra1 {
+.extra1 {
   grid-column: 3/4;
   grid-row: 4 / 5;
 }
