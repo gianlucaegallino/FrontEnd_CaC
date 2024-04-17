@@ -242,7 +242,7 @@ hr {
   height: 2.75rem;
   font-size: 1.1rem;
 }
-.searchBtn{
+.searchBtn {
   background-color: var(--RojoApagado);
   border: 1px solid white;
   border-radius: 3rem;
@@ -254,11 +254,19 @@ hr {
   font-weight: 700;
   color: white;
 }
+
+/* TODO: Fix searchbar heaight and make font sizing in the title a tad larger. Also try make padding more acc*/
 .searchContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.busqueda {
+  padding-top: 9.5rem;
+  padding-bottom: 11rem;
 }
 
 img:hover {
