@@ -232,6 +232,35 @@ hr {
   width: 161.5px;
 }
 
+.searchbar {
+  background-color: white;
+  border: 0px solid black;
+  border-radius: 3rem;
+  width: 25.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  height: 2.75rem;
+  font-size: 1.1rem;
+}
+.searchBtn{
+  background-color: var(--RojoApagado);
+  border: 1px solid white;
+  border-radius: 3rem;
+  width: 5.8rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  height: 2.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+}
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 img:hover {
   cursor: pointer;
 }
