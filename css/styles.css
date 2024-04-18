@@ -40,8 +40,6 @@ a:visited {
 }
 
 body {
-  font-family: Nunito, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: var(--CasiNegro);
 }
 /* TODO: ARREGLAR HEADER SPACING */
@@ -74,7 +72,8 @@ footer {
 hr {
   width: 80vw;
   border-style: none;
-  border-bottom: 2px solid var(--RojoApagado);
+  border-top: 2px solid var(--RojoApagado);
+  opacity: 1;
   margin-bottom: 0px;
   margin-top: 40px;
 }
@@ -202,6 +201,7 @@ hr {
   text-align: center;
   color: white;
 }
+
 
 /* TODO: Fix track autogeneration */
 .peliculasGrid {
