@@ -29,11 +29,17 @@ body {
   background-image: url(../media/img/bg-register.jpg);
   background-size: cover;
   background-position: center;
+  font-family: Nunito;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
+h1{
+  font-weight: 700;
+}
+
 header,
 main {
   background-color: rgba(32, 32, 32, 0.459);
@@ -42,6 +48,22 @@ main {
 
 header {
   height: 8vh;
+ 
+}
+
+.form-check-label{
+  font-size: 0.8rem;
+}
+
+.helpLink {
+  color: var(--GrisClaro);
+}
+.formbutton, .formbutton:hover {
+  background-color: var(--RojoApagado);
+  height: 3.5rem;
+  border: none;
+  border-radius: 5px;
+  width: 95%;
 }
 main {
   height: calc(100vh - 8vh);
@@ -58,13 +80,23 @@ main {
   justify-content: center;
   align-content: center;
   align-items: center;
+  
   background-color: var(--NegroGrisaceo);
   width: 30vw;
   height: 90vh;
   border-radius: 5px;
-  color: #fafafa;
+  
 }
 
+form{
+  gap: 1.25rem;
+  color: #fafafa;
+  padding: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 30vw;
+}
 .Logo {
   display: flex;
   flex-direction: row;
@@ -80,4 +112,21 @@ main {
 .IconoPelicula {
   width: 1.2rem;
   height: 1.2rem;
+}
+
+.input, .input:focus {
+  background-color: #333333;
+  border: 2px solid var(--RojoApagado);
+  border-radius: 30px;
+  width: 100%;
+  height: 40px;
+  color: #fafafa;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  font-size: 1.25rem;
+  box-shadow: 0px 0px 0px black;
+}
+
+.input::placeholder{
+  color: var(--GrisClaro);
 }

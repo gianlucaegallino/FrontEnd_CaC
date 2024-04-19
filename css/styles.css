@@ -41,6 +41,7 @@ a:visited {
 
 body {
   background-color: var(--CasiNegro);
+  font-family: Nunito;
 }
 /* TODO: ARREGLAR HEADER SPACING */
 header {
@@ -100,6 +101,11 @@ hr {
   height: 90vh;
 }
 
+.sticky {
+  position:-webkit-sticky;
+  position:sticky;
+  top:0px;
+}
 .herocontent {
   display: flex;
   flex-direction: column;
