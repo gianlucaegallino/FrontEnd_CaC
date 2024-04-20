@@ -78,6 +78,10 @@ hr {
   margin-bottom: 0px;
   margin-top: 40px;
 }
+
+h1, h2, h3{
+  font-weight: 700;
+}
 /* Tags */
 /* TODO: fix title spacing */
 .hero {
@@ -90,6 +94,29 @@ hr {
   height: 90vh;
   width: calc(100vw - 10px);
 }
+
+.infoSection{
+  display: flex;
+  color: white;
+  background-image: url(../media/img/mario-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: calc(100vw - 10px);
+}
+
+.fondotransparente2{
+  display: grid;
+  grid-template-columns: 1fr 2.25fr;
+  grid-template-rows: 1fr;
+  color: white;
+  background-color: #7979798e;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: calc(100vw - 10px);
+}
+
 .fondoTransparente {
   background-color: #0000008f;
   display: flex;
@@ -100,6 +127,24 @@ hr {
   width: calc(100vw - 10px);
   height: 90vh;
 }
+
+
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-left: 1rem;
+  color: white;
+}
+
+.movieCredits{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 15rem;
+}
+
 
 .sticky {
   position:-webkit-sticky;
@@ -149,6 +194,14 @@ hr {
 .extra2 {
   grid-column: 4/5;
   grid-row: 4 / 5;
+}
+
+.extrasSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
 }
 
 /* Classes */
@@ -238,6 +291,14 @@ hr {
   width: 161.5px;
 }
 
+.pIMGbig{
+  border-radius: 20px;
+  height: 450px;
+  width: auto;
+  align-self: center;
+  justify-self: end;
+  margin-right: 2.5rem;
+}
 .searchbar {
   background-color: white;
   border: 0px solid black;
@@ -279,6 +340,10 @@ img:hover {
   cursor: pointer;
 }
 
+/*Filter that turns black SVGs white.*/
+.WhiteSvgFilter {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(149deg) brightness(113%) contrast(96%);
+}
 /* TODO: Responsive support. use bootstrap for this */
 /*Mobile responsive */
 @media screen and (max-width: 1200px) {
