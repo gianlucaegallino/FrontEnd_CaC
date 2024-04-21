@@ -245,7 +245,6 @@ h3 {
   background-color: var(--RojoApagado);
 }
 
-
 .tituloXL,
 .tituloprinc {
   text-align: center;
@@ -302,8 +301,6 @@ h3 {
   transition: all 0.5s;
 }
 
-
-
 /* TODO: Fix track autogeneration */
 .peliculasGrid {
   display: grid;
@@ -329,7 +326,7 @@ h3 {
   scale: 1;
   transition: all 0.5s;
 }
-.movieTitle{
+.movieTitle {
   font-size: 1.6rem;
   font-weight: bold;
   color: white;
@@ -338,14 +335,14 @@ h3 {
   letter-spacing: 0.1rem;
   padding: 0px 10px;
 }
-.pelicula:hover .nombreInvisible  {
+.pelicula:hover .nombreInvisible {
   scale: 0.9;
   transition: all 0.5s;
   box-shadow: var(--RojoApagado) 0rem 0rem 2rem;
   opacity: 1;
 }
 
-.pelicula:hover .pIMG{
+.pelicula:hover .pIMG {
   scale: 0.9;
   transition: all 0.5s;
   opacity: 1;
@@ -393,6 +390,14 @@ h3 {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.nextBackButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 /* TODO: Fix searchbar heaight and make font sizing in the title a tad larger. Also try make padding more acc*/
 .searchContainer {
   display: flex;
@@ -407,12 +412,53 @@ h3 {
   padding-bottom: 11rem;
 }
 
+.AntSigBtn {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--RojoApagado);
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.AntSigBtn:hover {
+  scale: 0.95;
+  box-shadow: 0rem 0rem 0.5rem #b3b3b3;
+}
+
+.noEffectRedBtn,
+.noEffectRedBtn:hover,
+.noEffectRedBtn:active {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: var(--RojoApagado) !important;
+  border: none;
+}
+
+.noEffectBlackBtn,
+.noEffectBlackBtn:hover,
+.noEffectBlackBtn:active {
+  background-color: var(--CasiNegro) !important;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
 .budgetSubSection {
   display: flex;
   flex-direction: column;
   color: #fafafa;
   width: 26rem;
 }
+
 td {
   font-size: 1.2rem;
   padding: 10px 0px;
