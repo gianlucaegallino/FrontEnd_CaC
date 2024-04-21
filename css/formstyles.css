@@ -130,3 +130,9 @@ form{
 .input::placeholder{
   color: var(--GrisClaro);
 }
+
+/*Filter that turns black SVGs white.*/
+.WhiteSvgFilter {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(149deg) brightness(113%) contrast(96%);
+}
