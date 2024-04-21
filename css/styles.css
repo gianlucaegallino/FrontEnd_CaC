@@ -43,7 +43,6 @@ body {
   background-color: var(--CasiNegro);
   font-family: Nunito;
 }
-/* TODO: ARREGLAR HEADER SPACING */
 header {
   display: flex;
   flex-direction: row;
@@ -63,7 +62,6 @@ main {
   align-content: center;
   align-items: center;
 }
-/* TODO: ARREGLAR FOOTER BTNS QUE NO SON IGUALES*/
 footer {
   display: flex;
   justify-content: center;
@@ -88,7 +86,6 @@ h3 {
   font-weight: 700;
 }
 /* Tags */
-/* TODO: fix title spacing */
 .hero {
   display: flex;
   justify-content: center;
@@ -185,6 +182,10 @@ h3 {
   gap: 0.3rem;
 }
 
+.Logo:hover {
+  animation: tilt-n-move-shaking 0.25s infinite;
+}
+
 .IconoPelicula {
   width: 1.2rem;
   height: 1.2rem;
@@ -218,6 +219,7 @@ h3 {
 .redBTN2 {
   padding: 16px 32px;
   font-size: 1.2rem;
+  transition: all 0.3s;
 }
 
 .blackBTN {
@@ -290,8 +292,6 @@ h3 {
   opacity: 0;
   transition: all 0.5s;
 }
-
-/* TODO: Fix track autogeneration */
 .peliculasFlex {
   display: flex;
   justify-content: center;
@@ -392,7 +392,6 @@ h3 {
   gap: 1.5rem;
 }
 
-/* TODO: Fix searchbar heaight and make font sizing in the title a tad larger. Also try make padding more acc*/
 .searchContainer {
   display: flex;
   flex-direction: row;
@@ -403,7 +402,7 @@ h3 {
 
 .busqueda {
   padding-top: 9.5rem;
-  padding-bottom: 11rem;
+  padding-bottom: 9rem;
 }
 
 .AntSigBtn {
@@ -419,9 +418,11 @@ h3 {
   text-decoration: none;
   transition: all 0.3s;
 }
-.AntSigBtn:hover {
-  scale: 0.95;
+.AntSigBtn:hover,
+.redBTN2:hover {
+  scale: 0.925;
   box-shadow: 0rem 0rem 0.5rem #b3b3b3;
+  transition: 0.5s all;
 }
 
 .noEffectRedBtn,
@@ -490,4 +491,25 @@ th {
 }
 
 @media screen and (max-width: 768px) {
+}
+
+/*Animations*/
+
+/*Source: https://unused-css.com/blog/css-shake-animation/*/
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 }
