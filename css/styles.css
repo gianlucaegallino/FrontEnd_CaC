@@ -52,6 +52,9 @@ header {
   background-color: var(--RojoApagado);
   color: white;
   height: 10vh;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom:30px;
 }
 main {
   display: flex;
@@ -79,7 +82,9 @@ hr {
   margin-top: 40px;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   font-weight: 700;
 }
 /* Tags */
@@ -95,7 +100,18 @@ h1, h2, h3{
   width: calc(100vw - 10px);
 }
 
-.infoSection{
+.headerButtonContainer{
+  padding: 0px 24px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 2.75rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.infoSection {
   display: flex;
   color: white;
   background-image: url(../media/img/mario-bg.jpg);
@@ -105,7 +121,7 @@ h1, h2, h3{
   width: calc(100vw - 10px);
 }
 
-.fondotransparente2{
+.fondotransparente2 {
   display: grid;
   grid-template-columns: 1fr 2.25fr;
   grid-template-rows: 1fr;
@@ -128,7 +144,6 @@ h1, h2, h3{
   height: 90vh;
 }
 
-
 .movieInfo {
   display: flex;
   flex-direction: column;
@@ -138,18 +153,17 @@ h1, h2, h3{
   color: white;
 }
 
-.movieCredits{
+.movieCredits {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 15rem;
 }
 
-
 .sticky {
-  position:-webkit-sticky;
-  position:sticky;
-  top:0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 .herocontent {
   display: flex;
@@ -166,7 +180,6 @@ h1, h2, h3{
   align-items: center;
   font-size: 1.2rem;
   color: white;
-  padding: 1.6rem;
   font-weight: 700;
   gap: 0.3rem;
 }
@@ -176,9 +189,6 @@ h1, h2, h3{
   height: 1.2rem;
 }
 
-.headerButtonContainer {
-  padding: 1.6rem;
-}
 
 .GoToTop {
   position: fixed;
@@ -196,10 +206,10 @@ h1, h2, h3{
   grid-row: 4 / 5;
 }
 
-.extrasSection{
+.extrasSection {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
 }
@@ -214,9 +224,6 @@ h1, h2, h3{
   color: white;
   border-radius: 5px;
 }
-.redBTN {
-  padding: 0.5rem;
-}
 
 .redBTN2 {
   padding: 0.8rem;
@@ -225,7 +232,7 @@ h1, h2, h3{
 }
 
 .blackBTN {
-  padding: 0.5rem;
+  padding: 0.4rem 1rem;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -245,6 +252,13 @@ h1, h2, h3{
   margin-top: 0%;
   margin-bottom: 1rem;
 }
+
+.netLinks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
 .tituloXL {
   font-size: 4rem;
   width: 53rem;
@@ -260,7 +274,6 @@ h1, h2, h3{
   text-align: center;
   color: white;
 }
-
 
 /* TODO: Fix track autogeneration */
 .peliculasGrid {
@@ -291,7 +304,7 @@ h1, h2, h3{
   width: 161.5px;
 }
 
-.pIMGbig{
+.pIMGbig {
   border-radius: 20px;
   height: 450px;
   width: auto;
@@ -336,13 +349,41 @@ h1, h2, h3{
   padding-bottom: 11rem;
 }
 
+.budgetSubSection {
+  display: flex;
+  flex-direction: column;
+  color: #fafafa;
+  width: 26rem;
+}
+td {
+  font-size: 1.2rem;
+  padding: 10px 0px;
+}
+
+.svg {
+  width: 40px;
+  height: 40px;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0px;
+  gap: 20px;
+}
+table {
+  width: 100%;
+}
 img:hover {
   cursor: pointer;
+}
+th{
+  padding-left: 45%
 }
 
 /*Filter that turns black SVGs white.*/
 .WhiteSvgFilter {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(149deg) brightness(113%) contrast(96%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(149deg) brightness(113%) contrast(96%);
 }
 /* TODO: Responsive support. use bootstrap for this */
 /*Mobile responsive */
