@@ -78,7 +78,7 @@ hr {
   border-style: none;
   border-top: 2px solid var(--RojoApagado);
   opacity: 1;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
   margin-top: 40px;
 }
 
@@ -196,16 +196,6 @@ h3 {
   bottom: 1rem;
 }
 
-.extra1 {
-  grid-column: 3/4;
-  grid-row: 4 / 5;
-}
-
-.extra2 {
-  grid-column: 4/5;
-  grid-row: 4 / 5;
-}
-
 .extrasSection {
   display: flex;
   flex-direction: row;
@@ -277,7 +267,7 @@ h3 {
   color: white;
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 40px;
 }
 
 .pelicula {
@@ -302,13 +292,12 @@ h3 {
 }
 
 /* TODO: Fix track autogeneration */
-.peliculasGrid {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.peliculasFlex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 60px;
   width: 80vw;
-  justify-content: center;
 }
 
 .peliculasSlider {
