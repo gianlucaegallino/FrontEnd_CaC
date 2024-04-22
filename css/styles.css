@@ -535,9 +535,9 @@ a:visited {
     font-size: 1rem;
     padding: 0.2rem;
   }
-  .headerButtonContainer{
+  .headerButtonContainer {
     padding: 0px;
-    gap:20px;
+    gap: 20px;
   }
   .sticky {
     height: initial;
@@ -550,7 +550,27 @@ a:visited {
 }
 
 /*Footer Media Query*/
+@media screen and (max-width: 768px) {
+  footer {
+    height: initial;
+    flex-direction: column;
+    padding-bottom: 10px;
+    width: calc(100vw-10px);
+  }
 
+  .noEffectBlackBtn,
+  .noEffectRedBtn {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .noEffectRedBtn {
+    padding: 0px;
+  }
+  .noEffectBlackBtn {
+    margin-top: 0px;
+  }
+}
 /*Animations*/
 
 /*Fuente: https://unused-css.com/blog/css-shake-animation/*/
