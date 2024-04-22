@@ -24,7 +24,7 @@
   <main>
     <div class="content" data-aos="zoom-in" data-aos-duration="1000">
       <form action="register.html" method="post">
-        <h1>Registro</h1>
+        <h1 class="tituloForm">Registro</h1>
         <input type="text" class="form-control input" placeholder="Nombre" required>
         <input type="text" class="form-control input" placeholder="Apellido" required>
         <input type="email" class="form-control input" placeholder="Email" required>
@@ -48,10 +48,11 @@
           <input class="form-check-input" type="checkbox" name="Terminos" id="Terminos" required>
           <label class="form-check-label" for="Terminos">Acepto términos y condiciones</label>
         </div>
-        <div>
-          <button class="btn btn-primary formbutton" type="submit">Registrarse</button>
-          <a href="./register.html" class="helpLink">Necesitas ayuda?</a>
-        </div>
+        
+          <div class="SendBtnContainer">
+            <button class="btn btn-primary formbutton" type="submit">Registrarse</button>
+            <a href="./register.html" class="helpLink">Necesitas ayuda?</a>
+          </div>
       </form>
     </div>
   </main>
