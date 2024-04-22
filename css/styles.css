@@ -113,6 +113,13 @@ a:visited {
 
 /* --------------------------------- SHARED STYLES --------------------------------- */
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
 .headerButtonContainer {
   padding: 0px 24px;
   padding-top: 5px;
@@ -250,15 +257,13 @@ a:visited {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  width: 53rem;
-  height: 11rem;
+  width: calc(100vw - 10px);
 }
 
 .tituloprinc {
   font-size: 2.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  width: 31rem;
 }
 
 .titulo {
@@ -540,6 +545,7 @@ a:visited {
     gap: 20px;
   }
   .sticky {
+    position: sticky;
     height: initial;
     flex-direction: column;
     gap: 15px;
@@ -571,6 +577,79 @@ a:visited {
     margin-top: 0px;
   }
 }
+
+/* Index main media query*/
+@media screen and (max-width: 768px) {
+  .hero,
+  .fondoTransparente {
+    height: 60vh;
+  }
+  .tituloXL {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .tituloprinc {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .redBTN2 {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  h2.titulo {
+    font-size: 1.6rem;
+  }
+  h3.titulo{
+    font-size: 2rem;
+  }
+  .searchbar {
+    font-size: 1rem;
+    height: 40px;
+    width: 300px;
+  }
+  .searchBtn{
+    height: 40px;
+    padding: 0 15px;
+    font-size: 1rem;
+  }
+  .busqueda{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .peliculasFlex{
+    display: flex;
+    gap: 60px;
+    width: 80vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pelicula, .nombreInvisible, .pIMG{
+    width: auto;
+    height: 500px;
+  }
+
+  .nombreInvisible{
+    width: 100%;
+  }
+
+  .AntSigBtn {
+    font-size: 0.8rem;
+  }
+
+  .pIMGsmall{
+    height: 200px;
+    width: auto;
+  }
+}
+
+/* Info main media query */
+
 /*Animations*/
 
 /*Fuente: https://unused-css.com/blog/css-shake-animation/*/
