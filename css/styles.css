@@ -530,6 +530,23 @@ a:visited {
 
 /*Header Media Query*/
 @media screen and (max-width: 768px) {
+  .headerButtonContainer > a {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+  .headerButtonContainer{
+    padding: 0px;
+    gap:20px;
+  }
+  .sticky {
+    height: initial;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 1.5rem;
+    padding-bottom: calc(1.5rem - 7.5px);
+    width: calc(100vw-10px);
+  }
 }
 
 /*Footer Media Query*/
