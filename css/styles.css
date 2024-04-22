@@ -1,4 +1,4 @@
-/* Fonts */
+/* --------------------------------- FONTS --------------------------------- */
 
 @font-face {
   font-family: Nunito;
@@ -10,7 +10,7 @@
   src: url(../media/fonts/NunitoLightItalic.woff2);
 }
 
-/* Makes CSS variables for commonly used colors */
+/* --------------------------------- VARIABLES COLOR --------------------------------- */
 :root {
   --RojoApagado: #9f3647;
   --CasiNegro: #181419;
@@ -19,7 +19,7 @@
   --GrisClaro: #787878;
 }
 
-/*scrollbar*/
+/* --------------------------------- SCROLL --------------------------------- */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -33,16 +33,13 @@
   background: var(--RojoApagado);
 }
 
-/* Removes link decorations */
-a:link,
-a:visited {
-  text-decoration: none;
-}
+/* --------------------------------- GENERAL SELECTORS --------------------------------- */
 
 body {
   background-color: var(--CasiNegro);
   font-family: Nunito;
 }
+
 header {
   display: flex;
   flex-direction: row;
@@ -55,6 +52,7 @@ header {
   padding-right: 40px;
   padding-bottom: 30px;
 }
+
 main {
   display: flex;
   flex-direction: column;
@@ -62,6 +60,7 @@ main {
   align-content: center;
   align-items: center;
 }
+
 footer {
   display: flex;
   justify-content: center;
@@ -71,6 +70,7 @@ footer {
   height: 15vh;
   gap: 0px;
 }
+
 hr {
   width: 80vw;
   border-style: none;
@@ -85,17 +85,33 @@ h2,
 h3 {
   font-weight: 700;
 }
-/* Tags */
-.hero {
-  display: flex;
-  justify-content: center;
-  color: white;
-  background-image: url(../media/img/banner-bg.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-  width: calc(100vw - 10px);
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  gap: 20px;
 }
+table {
+  width: 100%;
+}
+td {
+  font-size: 1.2rem;
+  padding: 10px 0px;
+}
+th {
+  padding-left: 45%;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+/* --------------------------------- SHARED STYLES --------------------------------- */
 
 .headerButtonContainer {
   padding: 0px 24px;
@@ -106,70 +122,6 @@ h3 {
   justify-content: center;
   align-items: center;
   font-size: 1.1rem;
-}
-
-.infoSection {
-  display: flex;
-  color: white;
-  background-image: url(../media/img/mario-bg.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-  width: calc(100vw - 10px);
-}
-
-.fondotransparente2 {
-  display: grid;
-  grid-template-columns: 1fr 2.25fr;
-  grid-template-rows: 1fr;
-  color: white;
-  background-color: #6b6b6ba1;
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-  width: calc(100vw - 10px);
-}
-
-.fondoTransparente {
-  background-color: #0000008f;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: calc(100vw - 10px);
-  height: 90vh;
-}
-
-.movieInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  padding-left: 1rem;
-  color: white;
-}
-
-.movieCredits {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.movieInfoText{
-  width: 57vw;
-}
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 999;
-}
-.herocontent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
 }
 
 .Logo {
@@ -198,23 +150,6 @@ h3 {
   bottom: 1.5rem;
 }
 
-.extrasSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: calc(100vw - 10px);
-  padding: 0px 12vw;
-  margin-top: 10rem;
-  margin-bottom: 6rem;
-}
-
-.rowtitle {
-  font-weight: 700;
-}
-
-/* Classes */
-
 .redBTN,
 .redBTN2 {
   background-color: var(--RojoApagado);
@@ -222,12 +157,6 @@ h3 {
   font-weight: 700;
   color: white;
   border-radius: 5px;
-}
-
-.redBTN2 {
-  padding: 16px 32px;
-  font-size: 1.2rem;
-  transition: all 0.3s;
 }
 
 .blackBTN {
@@ -243,214 +172,6 @@ h3 {
 .blackBTN:hover {
   box-shadow: 0rem 0rem 0.5rem #852d3b;
   background-color: var(--RojoApagado);
-}
-
-.tituloXL,
-.tituloprinc {
-  text-align: center;
-  margin-top: 0%;
-  margin-bottom: 1rem;
-}
-
-.netLinks {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-}
-
-.tituloXL {
-  font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  width: 53rem;
-  height: 11rem;
-}
-
-.tituloprinc {
-  font-size: 2.2rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-  width: 31rem;
-}
-.titulo {
-  text-align: center;
-  color: white;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-
-.pelicula {
-  position: relative;
-}
-
-.nombreInvisible {
-  position: absolute;
-  width: 200px;
-  height: 300px;
-  top: 0%;
-  left: 0%;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  color: rgb(255, 255, 255);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  opacity: 0;
-  transition: all 0.5s;
-}
-.peliculasFlex {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 60px;
-  width: 80vw;
-}
-
-.peliculasSlider {
-  display: grid;
-  grid-template: repeat(1, auto) / repeat(1, auto);
-  grid-auto-flow: column;
-  gap: 2.5rem;
-  overflow: auto;
-  width: 80vw;
-  padding-left: 40px;
-  padding-bottom: 2.5rem;
-}
-.pIMG {
-  height: 300px;
-  width: 200px;
-  border-radius: 10px;
-  scale: 1;
-  transition: all 0.5s;
-}
-.movieTitle {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.1rem;
-  padding: 0px 10px;
-}
-.movieAclamadas {
-  margin-bottom: 3.5rem;
-}
-.pelicula:hover .nombreInvisible {
-  scale: 0.9;
-  transition: all 0.5s;
-  box-shadow: var(--RojoApagado) 0rem 0rem 2rem;
-  opacity: 1;
-}
-
-.pelicula:hover .pIMG {
-  scale: 0.9;
-  transition: all 0.5s;
-  opacity: 1;
-}
-
-.pIMGsmall {
-  border-radius: 10px;
-  height: 242.25px;
-  width: 161.5px;
-}
-
-.movieInfo {
-  align-self: start;
-  margin-top: 10rem;
-}
-.movieHeading > h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin: 0px;
-}
-.movieOverview > h2, .trailerSubSection > h2 {
-  font-size: 1.5rem;
-  margin: 0px;
-  color: white;
-}
-
-.credit >  h3{
-  font-size: 1.17rem;
-  margin: 0px;
-}
-.pIMGbig {
-  border-radius: 20px;
-  height: 450px;
-  width: auto;
-  align-self: start;
-  justify-self: end;
-  margin-right: 2.5rem;
-  margin-top: 3rem;
-}
-.searchbar {
-  background-color: white;
-  border: 0px solid black;
-  border-radius: 25px;
-  color: #000000;
-  font-size: 1.2rem;
-  height: 50px;
-  margin: 20px 0px;
-  outline: none;
-  padding: 0px 20px;
-  width: 500px;
-}
-.searchBtn {
-  height: 50px;
-  margin: 20px 10px;
-  padding: 0 20px;
-  border-radius: 25px;
-  background-color: var(--RojoApagado);
-
-  font-weight: 700;
-  color: white;
-  font-size: 1.2rem;
-  border: 2px solid white;
-
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.nextBackButtonContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.searchContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 0.25rem;
-  margin-top: 2rem;
-}
-
-.busqueda {
-  padding-top: 9.5rem;
-  padding-bottom: 9rem;
-}
-
-.AntSigBtn {
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 1rem 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  background-color: var(--RojoApagado);
-  margin-top: 60px;
-  margin-bottom: 60px;
-  color: #ffffff;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-.AntSigBtn:hover,
-.redBTN2:hover {
-  scale: 0.925;
-  box-shadow: 0rem 0rem 0.5rem #b3b3b3;
-  transition: 0.5s all;
 }
 
 .noEffectRedBtn,
@@ -476,6 +197,293 @@ h3 {
   border-radius: 5px;
 }
 
+.svg {
+  width: 40px;
+  height: 40px;
+}
+
+/* --------------------------------- INDEX STYLES --------------------------------- */
+.hero {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-image: url(../media/img/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: calc(100vw - 10px);
+}
+
+.herocontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.fondoTransparente {
+  background-color: #0000008f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: calc(100vw - 10px);
+  height: 90vh;
+}
+
+.redBTN2 {
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.tituloXL,
+.tituloprinc {
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 1rem;
+}
+
+.tituloXL {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  width: 53rem;
+  height: 11rem;
+}
+
+.tituloprinc {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  width: 31rem;
+}
+
+.titulo {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.busqueda {
+  padding-top: 9.5rem;
+  padding-bottom: 9rem;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-top: 2rem;
+}
+
+.searchbar {
+  background-color: white;
+  border: 0px solid black;
+  border-radius: 25px;
+  color: #000000;
+  font-size: 1.2rem;
+  height: 50px;
+  margin: 20px 0px;
+  outline: none;
+  padding: 0px 20px;
+  width: 500px;
+}
+.searchBtn {
+  height: 50px;
+  margin: 20px 10px;
+  padding: 0 20px;
+  border-radius: 25px;
+  background-color: var(--RojoApagado);
+  font-weight: 700;
+  color: white;
+  font-size: 1.2rem;
+  border: 2px solid white;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pelicula {
+  position: relative;
+}
+
+.nombreInvisible {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  top: 0%;
+  left: 0%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.peliculasFlex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 80vw;
+}
+
+.nextBackButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.AntSigBtn {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--RojoApagado);
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.peliculasSlider {
+  display: grid;
+  grid-template: repeat(1, auto) / repeat(1, auto);
+  grid-auto-flow: column;
+  gap: 2.5rem;
+  overflow: auto;
+  width: 80vw;
+  padding-left: 40px;
+  padding-bottom: 2.5rem;
+}
+
+.pIMG {
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+  scale: 1;
+  transition: all 0.5s;
+}
+
+.pIMGsmall {
+  border-radius: 10px;
+  height: 242.25px;
+  width: 161.5px;
+}
+
+.movieTitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+  padding: 0px 10px;
+}
+
+.movieAclamadas {
+  margin-bottom: 3.5rem;
+}
+
+.pelicula:hover .nombreInvisible {
+  scale: 0.9;
+  transition: all 0.5s;
+  box-shadow: var(--RojoApagado) 0rem 0rem 2rem;
+  opacity: 1;
+}
+
+.pelicula:hover .pIMG {
+  scale: 0.9;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.AntSigBtn:hover,
+.redBTN2:hover {
+  scale: 0.925;
+  box-shadow: 0rem 0rem 0.5rem #b3b3b3;
+  transition: 0.5s all;
+}
+
+/* --------------------------------- INFO STYLES --------------------------------- */
+
+.infoSection {
+  display: flex;
+  color: white;
+  background-image: url(../media/img/mario-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: calc(100vw - 10px);
+}
+
+.pIMGbig {
+  border-radius: 20px;
+  height: 450px;
+  width: auto;
+  align-self: start;
+  justify-self: end;
+  margin-right: 2.5rem;
+  margin-top: 3rem;
+}
+
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-left: 1rem;
+  color: white;
+  align-self: start;
+  margin-top: 10rem;
+}
+
+.movieInfoText {
+  width: 57vw;
+}
+
+.movieCredits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fondotransparente2 {
+  display: grid;
+  grid-template-columns: 1fr 2.25fr;
+  grid-template-rows: 1fr;
+  color: white;
+  background-color: #6b6b6ba1;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: calc(100vw - 10px);
+}
+
+.extrasSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw - 10px);
+  padding: 0px 12vw;
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+}
+
 .budgetSubSection {
   display: flex;
   flex-direction: column;
@@ -484,47 +492,51 @@ h3 {
   flex-shrink: 0;
 }
 
-td {
-  font-size: 1.2rem;
-  padding: 10px 0px;
+.netLinks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
 }
 
-.svg {
-  width: 40px;
-  height: 40px;
+.rowtitle {
+  font-weight: 700;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0px;
-  gap: 20px;
+.movieHeading > h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0px;
 }
-table {
-  width: 100%;
-}
-img:hover {
-  cursor: pointer;
-}
-th {
-  padding-left: 45%;
+.movieOverview > h2,
+.trailerSubSection > h2 {
+  font-size: 1.5rem;
+  margin: 0px;
+  color: white;
 }
 
-/*Filter that turns black SVGs white.*/
+.credit > h3 {
+  font-size: 1.17rem;
+  margin: 0px;
+}
+
+/*-------------------------- GENERAL USE Y RESPONSIVE STYLES ----------------------------*/
+
+/* SVG FILTER Black -> White para el titulo y los svg de movieInfo*/
+
 .WhiteSvgFilter {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
     hue-rotate(149deg) brightness(113%) contrast(96%);
 }
-/* TODO: Responsive support. use bootstrap for this */
-/*Mobile responsive */
-@media screen and (max-width: 1200px) {
-}
 
+/*Header Media Query*/
 @media screen and (max-width: 768px) {
 }
 
+/*Footer Media Query*/
+
 /*Animations*/
 
-/*Source: https://unused-css.com/blog/css-shake-animation/*/
+/*Fuente: https://unused-css.com/blog/css-shake-animation/*/
 @keyframes tilt-n-move-shaking {
   0% {
     transform: translate(0, 0) rotate(0deg);
