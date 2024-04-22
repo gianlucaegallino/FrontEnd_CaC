@@ -682,31 +682,33 @@ a:visited {
     gap: 20px;
     width: 95vw;
     padding: 50px 0px;
-    margin:0px;
+    margin: 0px;
   }
   .trailerSubSection {
     width: 100%;
   }
-  .trailerSubSection>h2{
+  .trailerSubSection > h2 {
     margin-bottom: 20px;
   }
   .trailer {
     height: 300px;
     width: 100%;
   }
-  .budgetSubSection, .netLinks{
+  .budgetSubSection,
+  .netLinks {
     width: 100%;
   }
-  .netLinks{
+  .netLinks {
     justify-content: space-between;
-    gap: calc(calc(100vw - calc(40px * 4))/4);
+    gap: calc(calc(100vw - calc(40px * 4)) / 4);
   }
-  .netLinks>li{
+  .netLinks > li {
     width: 50px;
     justify-content: center;
     justify-self: center;
   }
-  td, th {
+  td,
+  th {
     font-size: 1rem;
   }
 }
