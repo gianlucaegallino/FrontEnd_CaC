@@ -1,4 +1,4 @@
-/* Fonts */
+/* --------------------------------- FONTS --------------------------------- */
 
 @font-face {
   font-family: Nunito;
@@ -10,7 +10,7 @@
   src: url(../media/fonts/NunitoLightItalic.woff2);
 }
 
-/* Makes CSS variables for commonly used colors */
+/* --------------------------------- VARIABLES COLOR --------------------------------- */
 :root {
   --RojoApagado: #9f3647;
   --CasiNegro: #181419;
@@ -19,11 +19,21 @@
   --GrisClaro: #787878;
 }
 
-/* Removes link decorations */
-a:link,
-a:visited {
-  text-decoration: none;
+/* --------------------------------- SCROLL --------------------------------- */
+
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+::-webkit-scrollbar-track {
+  background: var(--CasiNegro);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--RojoApagado);
+}
+
+/* --------------------------------- GENERAL SELECTORS --------------------------------- */
 
 body {
   background-image: url(../media/img/bg-register.jpg);
@@ -36,7 +46,7 @@ body {
   flex-direction: column;
 }
 
-h1{
+h1 {
   font-weight: 700;
 }
 
@@ -48,23 +58,8 @@ main {
 
 header {
   height: 8vh;
- 
 }
 
-.form-check-label{
-  font-size: 0.8rem;
-}
-
-.helpLink {
-  color: var(--GrisClaro);
-}
-.formbutton, .formbutton:hover {
-  background-color: var(--RojoApagado);
-  height: 3.5rem;
-  border: none;
-  border-radius: 5px;
-  width: 95%;
-}
 main {
   height: calc(100vh - 8vh);
   display: flex;
@@ -74,21 +69,7 @@ main {
   align-items: center;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  
-  background-color: var(--NegroGrisaceo);
-  width: 30vw;
-  height: 90vh;
-  border-radius: 5px;
-  
-}
-
-form{
+form {
   gap: 1.25rem;
   color: #fafafa;
   padding: 3.75rem;
@@ -97,6 +78,44 @@ form{
   justify-content: flex-start;
   width: 30vw;
 }
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+/* ---------------------------------- CLASS STYLES --------------------------------- */
+
+.form-check-label {
+  font-size: 0.8rem;
+}
+
+.helpLink {
+  color: var(--GrisClaro);
+}
+
+.formbutton,
+.formbutton:hover {
+  background-color: var(--RojoApagado);
+  height: 3.5rem;
+  border: none;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  background-color: var(--NegroGrisaceo);
+  width: 30vw;
+  height: 90vh;
+  border-radius: 5px;
+}
+
 .Logo {
   display: flex;
   flex-direction: row;
@@ -114,7 +133,8 @@ form{
   height: 1.2rem;
 }
 
-.input, .input:focus {
+.input,
+.input:focus {
   background-color: #333333;
   border: 2px solid var(--RojoApagado);
   border-radius: 30px;
@@ -127,12 +147,17 @@ form{
   box-shadow: 0px 0px 0px black;
 }
 
-.input::placeholder{
+.input::placeholder {
   color: var(--GrisClaro);
 }
 
-/*Filter that turns black SVGs white.*/
+/*-------------------------- GENERAL USE Y RESPONSIVE STYLES ----------------------------*/
+
+/* SVG FILTER Black -> White para el titulo y los svg de movieInfo*/
+
 .WhiteSvgFilter {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
     hue-rotate(149deg) brightness(113%) contrast(96%);
 }
+
+/*Media Query*/
